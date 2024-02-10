@@ -1,0 +1,235 @@
+.service__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./reimagined.jpg');
+    padding: 2em;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.service__hero h1 {
+    font-size: var(--mob-h1-size);
+    margin-bottom: .5em;
+}
+
+.service__hero h2 {
+    font-size: var(--mob-h2-size);
+    font-weight: 400;
+}
+
+.role__testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.role__container {
+    padding: 2em;
+    width: 100%;
+}
+
+
+.role__container h2 {
+    font-size: var(--mob-h2-size);
+    margin-bottom: .5em;
+}
+
+.role__container p {
+    font-size: var(--mob-p-size);
+}
+
+.list__container {
+    margin-top: 1em;
+}
+
+.list__container li {
+    margin: 1em 0;
+    color: #000;
+    font-size: var(--mob-p-size);
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+li i {
+    color: var(--sec-clr);
+    font-size: 1.5rem;
+}
+
+.testimonial__container {
+    width: 100%;
+    background: url('./about_img.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+    width: 100%;
+}
+
+.quote__container {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.quote__symbol {
+    font-size: 2.5em;
+    color: var(--sec-clr);
+}
+
+.quote__container h2 {
+    font-size: var(--mob-h2-size);
+    color: var(--sec-clr);
+    margin-bottom: 1em;
+}
+
+.quote__container p {
+    font-size: var(--mob-p-size);
+    /* margin-top: 1em; */
+}
+
+.test__name, .test__title {
+    text-align: center;
+    margin: 1em;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.success__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 2em;
+    gap: 1em;
+}
+
+.success__desc h2 {
+    font-family: var(--mob-h2-size);
+    color: var(--sec-clr);
+}
+
+.priority__item h3 {
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+.priority__item p {
+    font-size: var(--mob-p-size);
+}
+
+.onboarding__container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.onboarding__img {
+    display: none;
+}
+
+.onboarding__desc h2 {
+    font-size: var(--mob-h2-size);
+    padding-bottom: 1em;
+    color: var(--sec-clr);
+}
+
+.process {
+    margin-bottom: 2em;
+}
+
+.step {
+    padding: 1em;
+    background: var(--sec-clr);
+}
+
+.step__desc {
+    font-size: var(--mob-p-size);
+    margin-top: 1em;
+}
+
+.safety__container {
+    padding: 2em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./drive.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.safety__container li {
+    color: #fff;
+}
+
+.safety__container h2 {
+    margin-bottom: 1em;
+}
+
+.safety__container p {
+    font-size: var(--mob-p-size);
+}
+
+
+@media screen and (min-width: 810px) {
+    .role__testimonial-wrapper {
+        flex-direction: row;
+        padding: 2em 3em;
+    }
+
+    .role__container, .testimonial__container {
+        width: 50%;
+    }
+
+    .service__hero h1 {
+        font-size: var(--bigger-h1);
+    }
+
+    .service__hero h2, .role__container h2, .quote__container h2,
+    .success__desc h2, .onboarding__desc h2, .safety__container h2 {
+        font-size: var(--bigger-h2);
+    }
+
+    .role__container p, .priority__item p, .safety__container p, .step, .step__desc,
+    .quote__container p {
+        font-size: var(--bigger-p);
+    }
+
+    .step {
+        display: inline-block;
+    }
+    
+    .safety__container p {
+        max-width: 700px;
+    }
+
+    .priority__item h3 {
+        font-size: 1.5rem;
+        margin-bottom: .5em;
+    }
+
+    a, .list__container li {
+        font-size: var(--bigger-p);
+    }
+
+    .onboarding__container {
+        flex-direction: row;
+        padding: 2em 3em;
+    }
+
+    .onboarding__img {
+        display: block;
+    }
+
+    .onboarding__desc, .onboarding__img {
+        width: 50%;
+    }
+
+    .success__container {
+        flex-direction: row;
+        padding: 2em 3em;
+    }
+
+    .success__desc, .success__img {
+        width: 50%;
+    }
+}

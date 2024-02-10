@@ -1,0 +1,134 @@
+.business__container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.business__container h2 {
+    color: var(--sec-clr);
+}
+
+.business__item {
+    margin: 2em 0;
+    width: 100%;
+}
+
+.business__img {
+    display: none;
+}
+
+.business__item h3 {
+    margin-bottom: 1em;
+}
+
+.business__item p {
+    font-size: var(--mob-p-size);
+}
+
+.transit__container, .paratransit__container, .tech__enabled-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.paratransit__container h2 {
+    font-size: var(--mob-h2-size);
+    margin-bottom: 1em;
+}
+
+.services__container {
+    padding: 2em;
+}
+
+.services__container h2, .paratransit__container h2 {
+    font-size: var(--mob-h2-size);
+    margin-bottom: 1em;
+    color: var(--sec-clr);
+}
+
+.services__container h3 {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.services__container p, .paratransit__container p,
+.paratransit__container li, .transit__description li {
+    font-size: var(--mob-p-size);
+}
+
+.service {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.service p {
+    margin-bottom: 1em;
+}
+
+.tech__enabled-container h2 {
+    font-size: var(--mob-h2-size);
+    margin-bottom: 1em;
+    color: var(--sec-clr);
+}
+
+.tech__enabled-container h3 {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.tech__enabled-container p, .tech__enabled-container li {
+    font-size: var(--mob-p-size);
+}
+
+@media screen and (min-width: 810px) {
+    .business__container, .transit__container, .paratransit__container,
+    .tech__enabled-container {
+        flex-direction: row;
+        padding: 2em 3em;
+        gap: 2em;
+    }
+
+    .business__img, .business__desc {
+        width: 50%;
+        display: block;
+    }
+
+    .transit__description, .transit__img {
+        width: 50%;
+    }
+
+    .tech__enabled-desc, .tech__enabled-img {
+        width: 50%;
+    }
+    
+    .services__container {
+        padding: 2em 3em;
+    }
+
+    .service {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .service__desc, .service__img {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .services__container h2, .paratransit__container h2,
+    .business__container h2, .tech__enabled-desc h2 {
+        font-size: var(--bigger-h2);
+    }
+
+    .tech__enabled-container p, .tech__enabled-container li,
+    .service p, .services__container p, .paratransit__container p,
+    .paratransit__container li, .transit__description li, .business__item p {
+        font-size: var(--bigger-p);
+        margin-top: 1em;
+    }
+
+}
